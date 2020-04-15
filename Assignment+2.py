@@ -209,9 +209,9 @@ def answer_six():
         if w.isalpha() and token_dict[w]>2000:
             liss[w]=token_dict[w]
     sortedlist=sorted(liss.items(),key=operator.itemgetter(1),reverse=True)
+    finale=[(f,w) for w,f in sortedlist]
     
-    
-    return sortedlist# Your answer here
+    return finale# Your answer here
 
 answer_six()
 
